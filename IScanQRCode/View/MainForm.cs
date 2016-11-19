@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ZXing;
 using ZXing.Common;
 using ZXing.QrCode;
+using ZXing.QrCode.Internal;
 
 namespace IScanQRCode.View
 {
@@ -28,9 +29,12 @@ namespace IScanQRCode.View
         void splash_FormClosed(object sender, FormClosedEventArgs e)
         {
             QRCodeResultTextBox.Text = qrcodeText;
+            this.Show();
+            this.Activate();
         }
         private void ScanQRCodeButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             foreach (Screen screen in Screen.AllScreens)
             {
                 using (Bitmap fullImage = new Bitmap(screen.Bounds.Width,
@@ -99,11 +103,22 @@ namespace IScanQRCode.View
                 }
             }
             MessageBox.Show(("No QRCode found. Try to zoom in or move it to the center of the screen."));
+            this.Show();
+            this.Activate();
         }
 
         private void QRCodeResultTextBox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.LinkText);
         }
+
+        private void GenerateQRCodeButton_Click(object sender, EventArgs e)
+        {
+            QRCodeForm qrcodeForm = new QRCodeForm(this.QRCodeResultTextBox.Text, Decimal.ToInt32( this.QRCodeSize.Value));
+            qrcodeForm.Show();
+            qrcodeForm.Activate();
+        }
+
+
     }
 }
