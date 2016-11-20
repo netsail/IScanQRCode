@@ -21,6 +21,7 @@ namespace IScanQRCode.View
         public QRCodeForm(string qrText,int size)
         {
             InitializeComponent();
+            this.Text = qrText;
             pictureBox1.Size = new Size(size, size);
             GenerateQRCode(qrText,size);
         }
