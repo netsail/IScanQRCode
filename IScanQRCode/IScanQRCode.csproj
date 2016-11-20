@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico\ican_qrcode_64.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -122,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -144,6 +148,48 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\generate_qrcode_72.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_72.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_96.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ico\ican_qrcode_128.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
