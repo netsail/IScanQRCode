@@ -61,6 +61,30 @@ namespace IScanQRCode.Properties {
         }
         
         /// <summary>
+        ///   查找类似 # translation for Simplified Chinese
+        ///
+        ///IScanQRcode=IScanQRcode
+        ///
+        ///# Menu items
+        ///
+        ///
+        ///# Config Form
+        ///
+        ///# Log Form
+        ///
+        ///# QRCode Form
+        ///
+        ///# Messages
+        ///
+        /// 的本地化字符串。
+        /// </summary>
+        internal static string cn {
+            get {
+                return ResourceManager.GetString("cn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Icon generate_qrcode_16 {

@@ -71,6 +71,7 @@ namespace IScanQRCode.View
                         {
                             QRCodeSplashForm splash = new QRCodeSplashForm();
                             this.qrcodeText = result.Text;
+                            Clipboard.SetText(result.Text);
                             this.QRCodeResultTextBox.Text = string.Empty;
                             splash.FormClosed += splash_FormClosed;
                             double minX = Int32.MaxValue, minY = Int32.MaxValue, maxX = 0, maxY = 0;

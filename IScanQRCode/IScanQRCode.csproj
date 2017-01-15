@@ -102,6 +102,8 @@
     <Compile Include="Third\zxing\ResultPoint.cs" />
     <Compile Include="Third\zxing\ResultPointCallback.cs" />
     <Compile Include="Third\zxing\WriterException.cs" />
+    <Compile Include="Util\I18N.cs" />
+    <Compile Include="Util\StringEx.cs" />
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,7 +149,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Util\" />
+    <Content Include="data\cn.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ico\generate_qrcode_16.ico" />

@@ -1,0 +1,15 @@
+# translation for Simplified Chinese
+
+IScanQRcode=IScanQRcode
+
+# Menu items
+
+
+# Config Form
+
+# Log Form
+
+# QRCode Form
+
+# Messages
+
